@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Мій профіль</title>
+   <script type="module" src="./js/check.js"></script>
+   <meta http-equiv="Content" content="HTML/text" charset="UTF-8">
+   <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+   <script async src="js/navigation.js"></script>
+   <link rel="stylesheet" href="css/saas.css">
+</head>
+
+<body>
+   <div class="contaiter">
+      <div class="nav">
+         <ul>
+            <li class="navLogo">
+               <p class="navLogoOpen" style="display: none; color: #ffc043;">HRM SYSTEM</p>
+               <p class="navLogoClose" style="color: #ffc043;">HRM </p>
+            </li>
+
+            <li class="navImg">
+               <i class=" fa-solid fa-arrow-right navImg_L" style="color: #E8E8E8; padding: 15px;"></i>
+               <i class=" fa-solid fa-arrow-left navImg_R" style="display: none; color: #E8E8E8; padding: 15px"></i>
+            </li>
+
+            <li><a class="navA active" href="./profile.html">
+                  <i class="fa-regular fa-user" style="color: #E8E8E8;"></i>
+                  <p class="navP">Профіль</p>
+               </a></li>
+
+            <li><a class="navA " href="./index.html">
+                  <i class="fa-solid fa-table" style="color: #E8E8E8;"></i>
+                  <p class="navP">Кадровий відділ</p>
+               </a></li>
+
+            <li><a class="navA" href="./page2.html">
+                  <i class="fa-regular fa-folder" style="color: #E8E8E8;"></i>
+                  <p class="navP">Редагування файлів</p>
+               </a></li>
+
+            <li><a class="navA" href="./page3.html">
+                  <i class="fa-regular fa-calendar" style="color: #E8E8E8;"></i>
+                  <p class="navP">Календар подій</p>
+               </a></li>
+
+            <li><a class="navA" href="./page4.html">
+                  <i class="fa-solid fa-briefcase" style="color: #E8E8E8;"></i>
+                  <p class="navP">Звільнені працівникі</p>
+               </a></li>
+            <li><a class="navA" onclick="firebase.auth().signOut()">
+                  <i class="fa-solid fa-right-from-bracket" style="color: #E8E8E8;"></i>
+                  <p class="navP">Вихід</p>
+               </a></li>
+         </ul>
+      </div>
+      <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+      <script src="https://kit.fontawesome.com/d514fe878e.js" crossorigin="anonymous"></script>
+      <script type="module" src="js/profile.js"></script>
+   </div>
+</body>
+
+</html>

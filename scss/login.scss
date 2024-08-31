@@ -1,0 +1,187 @@
+@import "./reset.scss";
+
+input:focus {
+   outline: none;
+}
+
+.wrapper {
+   color: #50545B;
+   height: 100%;
+   font-size: 14px;
+   display: flex;
+   justify-content: start;
+}
+
+.colorColumn {
+   background: #18A0FB;
+   min-width: 15px;
+   margin-right: 20px;
+   height: 100%;
+   transition-duration: 1s;
+}
+
+.row {
+
+   max-width: 1140px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+}
+
+.menuAuth {
+   width: 30%;
+   max-width: 380px;
+   min-width: 280px;
+   max-height: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+   box-shadow: 1px 6px 19px 0px rgba(0, 0, 0, 0.2);
+   border-radius: 23px;
+   margin: 0px 20px 0px 0px;
+   background: #ffffff;
+}
+
+.imageContainer {
+   width: 70%;
+   height: 50%;
+}
+
+.imageContainer img {
+   object-fit: cover;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+
+.menuRegister {
+   width: 30%;
+   max-width: 380px;
+   min-width: 280px;
+   max-height: 450px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 1px 6px 19px 0px rgba(0, 0, 0, 0.2);
+   border-radius: 23px;
+   margin: 0px 20px 0px 0px;
+}
+
+.menuAuth input {
+   width: 245px;
+   height: 35px;
+   background: #EEF1F6;
+   color: #50545B;
+   border-radius: 5px;
+   padding: 10px;
+   transition-duration: 0.4s;
+   margin-bottom: 10px;
+
+}
+
+.menuAuth input:focus {
+   border: 1px solid #1588d4;
+   transition-duration: 0.4s;
+}
+
+.menuRegister input {
+   width: 245px;
+   height: 35px;
+   background: #F6F3EE;
+   color: #50545B;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.menuRegister input:focus {
+   border: 1px solid #EB7A00;
+   transition-duration: 0.4s;
+}
+
+h1 {
+   font-size: 24px;
+   font-weight: 700;
+   margin: 50px 0px 35px;
+}
+
+.loginBtnContainer,
+.registerBtnContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.signIn {
+   width: 180px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: #18A0FB;
+   color: #F2F2F2;
+   margin: 30px 0px 18px;
+   font-weight: 600;
+   transition-duration: 0.4s;
+}
+
+.signIn:hover {
+   width: 200px;
+}
+
+.signIn:active {
+   color: #18A0FB;
+   border: 1px solid #e2e2e2;
+   background-color: white;
+}
+
+.signUp {
+   width: 180px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: #EB7A00;
+   color: white;
+   margin: 10px 0px 18px;
+   font-weight: 600;
+   transition-duration: 0.4s;
+}
+
+.signUp:hover {
+   width: 200px;
+}
+
+.signUp:active {
+   color: #EB7A00;
+   border: 1px solid #EB7A00;
+   background-color: white;
+}
+
+.goToSignUp,
+.goToSignIn {
+   width: 108px;
+   height: 30px;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   border: 1px solid #6B708A;
+   color: #6B708A;
+   background: white;
+   font-size: 12px;
+   font-weight: 600;
+   transition-duration: 0.4s;
+}
+
+
+.goToSignUp:hover,
+.goToSignUp:active {
+   color: #18A0FB;
+   border: 1px solid #18A0FB;
+}
+
+.goToSignIn:hover,
+.goToSignIn:active {
+   color: #EB7A00;
+   border: 1px solid #EB7A00;
+}
+
+
+@import "./adaptive.scss";

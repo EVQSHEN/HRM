@@ -1,0 +1,59 @@
+.nav {
+  position: absolute;
+  width: 45px;
+  height: 100%;
+  background: #232830;
+  z-index: 5;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 0px 0px;
+  transition: 0.3s;
+}
+
+.navLogo {
+  margin-bottom: 40px;
+  color: rgb(0, 123, 255);
+  font-weight: 700;
+  cursor: default;
+}
+
+.navA {
+  min-height: 50px;
+  color: #E8E8E8;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.navA .navP {
+  margin-left: 10px;
+  display: none;
+}
+.navA:hover {
+  background: rgba(169, 206, 254, 0.337254902);
+  transition: 0.4s;
+}
+
+.active {
+  background: rgba(119, 169, 255, 0.5176470588);
+  color: #E8E8E8;
+}
+.active:hover {
+  background: #77a9ff;
+  transition: 0.5s;
+}
+
+.navImg {
+  display: flex;
+}
+.navImg:hover {
+  background: rgba(253, 241, 104, 0.337254902);
+  transition: 0.4s;
+}
+
+.fa-arrow-left {
+  width: 220PX;
+}/*# sourceMappingURL=nav.css.map */

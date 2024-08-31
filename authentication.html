@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Авторизація</title>
+   <link rel="stylesheet" href="./css/login.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="colorColumn"></div>
+      <div class="row">
+         <div class="menuAuth">
+            <h1>АВТОРИЗАЦІЯ</h1>
+            <div class="emailContainerLogin">
+               <p>Email</p>
+               <input class="emailLoginInp" type="email" name="">
+            </div>
+            <div class="passwordContainerLogin">
+               <p>Пароль</p>
+               <input class="passworslLoginInp" type="password" name="">
+            </div>
+            <div class="loginBtnContainer">
+               <button class="signIn">ВХІД</button>
+               <button class="goToSignUp">РЕЄСТРАЦІЯ</button>
+            </div>
+         </div>
+
+         <div style="display: none;" class="menuRegister">
+            <h1>РЕЄСТРАЦІЯ</h1>
+            <div class="emailContainerRegister">
+               <p>Email</p>
+               <input class="emailRegisterInp" type="email" name="">
+            </div>
+            <div class="passwordContainerRegister">
+               <p>Пароль</p>
+               <input class="passwordRegisterInp" type="password" name="">
+            </div>
+            <div class="emailContainerRegister">
+               <p>ПІБ</p>
+               <input class="nameRegisterInp" type="text" name="">
+            </div>
+            <div class="registerBtnContainer">
+               <button class="signUp">РЕЄСТРАЦІЯ</button>
+               <button class="goToSignIn">ВХІД</button>
+            </div>
+         </div>
+         <div class="imageContainer">
+            <img src="./img/login.jpg" alt="">
+         </div>
+      </div>
+   </div>
+   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+   <script type="module" src="./js/аuthentication.js"></script>
+</body>
+
+</html>

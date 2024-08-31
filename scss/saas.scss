@@ -1,0 +1,373 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "./nav.scss";
+@import "./profile.scss";
+@import "./login.scss";
+
+input:focus {
+   outline: none;
+}
+
+/// messege box
+.messege {
+   padding: 0px 15px 0px 60px;
+   background: #ffffffb4;
+   backdrop-filter: blur(3px);
+   position: fixed;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+   top: 0%;
+   left: 0%;
+   overflow: auto;
+
+
+   &_content {
+      margin: 8% auto;
+      box-shadow: 1px 1px 18px #00000042;
+      background: #ffffff;
+      max-width: 600px;
+      min-width: 380px;
+      border-radius: 10px;
+   }
+
+   &_input p {
+      margin: 0px 0px 10px 20px;
+   }
+
+   &_input {
+
+      padding: 0px 6px;
+      width: 150px;
+      height: 30px;
+      border-radius: 6px;
+      background: #d8efff;
+   }
+}
+
+
+
+.input_container {
+   width: 80%;
+   margin: 20px auto 30px;
+
+   &_flex {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+
+.inputBtnMenu {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 20px;
+}
+
+h3 {
+   background: #18A0FB;
+   border-radius: 6px 6px 0px 0px;
+   text-align: center;
+   padding: 15px 0px 15px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 800;
+   color: white;
+}
+
+// messege box button 
+.addBtn,
+.dismissalBtn,
+.editBtn,
+.addEvent {
+   width: 110px;
+   height: 30px;
+   border-radius: 6px;
+   color: #ffffff;
+   background: #18A0FB;
+   margin-right: 10px;
+   transition: 0.6s;
+}
+
+.addBtn:hover,
+.dismissalBtn:hover,
+.editBtn:hover {
+   color: #18A0FB;
+   background: #ffffff;
+   border: 1px solid #18A0FB;
+   transition: 0.6s;
+}
+
+.closeMessage {
+   width: 110px;
+   height: 30px;
+   border-radius: 6px;
+   border: 1px solid #858585;
+   color: #858585;
+   background: white;
+   transition: 0.4s;
+}
+
+.closeMessage:hover {
+   color: #18A0FB;
+   border: 1px solid #18A0FB;
+   transition: 0.4s;
+}
+
+.eventTitleStr {
+   width: 200px;
+}
+
+// messege box button end
+
+
+// page 1 
+.wrapper {
+   width: 99%;
+}
+
+.pageTitle {
+   top: 35px;
+   left: 80px;
+   position: absolute;
+   font-weight: 700;
+   font-size: 24px;
+   color: #232830;
+}
+
+// page 1 btn dissmal, edit persone, search form
+.contaiter {
+   min-height: 100%;
+   position: relative;
+}
+
+.btnWrapper {
+   top: 97px;
+   left: 67px;
+   position: absolute;
+   z-index: 1;
+}
+
+.createPerson {
+   width: 165px;
+   height: 41.5px;
+   border-radius: 6px;
+   color: #EEF1F6;
+   background: #18A0FB;
+   transition: 0.6s;
+   margin-right: 10px;
+}
+
+.createPerson:hover {
+   color: #18A0FB;
+   background: #ffffff;
+   border: 1px solid #18A0FB;
+   transition: 0.6s;
+}
+
+.createPerson:active {
+   border: 4px solid #18A0FB;
+   transition: 0.2s;
+}
+
+.dismissalPerson {
+   width: 165px;
+   height: 41.5px;
+   background: #FFFFFF;
+   color: #555658;
+   border: 1px solid #8C8E96;
+   border-radius: 6px;
+   margin: 0px 5px 0px 0px;
+   transition: 0.6s;
+}
+
+.dismissalPerson:hover {
+   color: #18A0FB;
+   border: 1px solid #18A0FB;
+   transition: 0.4s;
+}
+
+.dismissalPerson:active {
+   border: 4px solid #18A0FB;
+   transition: 0.2s;
+}
+
+// Search
+.gridjs-search {
+   float: right;
+}
+
+// table
+.table {
+   margin-top: 50px;
+   width: 100%;
+   padding: 40px 0px 0px 60px;
+
+   &_noBtn {
+      margin-top: 20px;
+   }
+}
+
+// table head and footer
+//head
+th.gridjs-th {
+   background: #F7F8F9;
+   padding-top: 10px;
+}
+
+// footer
+.gridjs-footer {
+   background: #f0f1f381;
+}
+
+.gridjs-pagination .gridjs-pages button:first-child:hover {
+   color: #18A0FB;
+   border: 1px solid #18A0FB;
+   transition: 0.4s;
+}
+
+.gridjs-pagination .gridjs-pages button.gridjs-currentPage {
+
+   border-radius: 6px;
+   border: 1px solid #18A0FB;
+   transition: 0.4s;
+}
+
+.gridjs-pagination .gridjs-pages button:last-child:hover {
+   color: #18A0FB;
+   border: 1px solid #18A0FB;
+   transition: 0.4s;
+}
+
+.gridjs-pages button {
+   color: #555658;
+   border-radius: 6px;
+   border: 1px solid #8C8E96;
+   transition: 0.4s;
+}
+
+.paginationElement {
+   position: absolute;
+   bottom: 20px;
+   left: 280px;
+   background: #F7F8F9;
+}
+
+// table body 
+
+.gridjs-td {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.gridjs-wrapper {
+   overflow: auto;
+   max-height: 520px !important;
+}
+
+// btns table body 
+.gridjs-td span {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20px;
+}
+
+.btnEditFile,
+.btnDell,
+.btnEdit {
+   padding: 14px 8px;
+   border-radius: 10px;
+   transition: 0.5s;
+}
+
+.btnEdit {
+   margin-right: 10px;
+}
+
+.btnDell {
+   padding: 8px 8px;
+}
+
+.btnEditFile:hover,
+.btnDell:hover,
+.btnEdit:hover {
+   background: #c6e8ff;
+   transition: 0.5s;
+}
+
+.gridjs-container {
+   max-height: 100%;
+   margin-bottom: 20px;
+}
+
+
+// btns table body end
+
+
+// page 3 CALENDAR
+.wrapperCalendar {
+   position: relative;
+   left: 0%;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   padding: 0px 20px 0px 60px;
+   overflow: auto;
+
+}
+
+.calendar {
+   max-width: 750px;
+   margin: 20px auto 50px;
+   padding: 13px;
+   border-radius: 5px;
+   box-shadow: 1px 2px 30px #0a2e687a;
+}
+
+.fc-addEventButton-button {
+   width: 167px !important;
+   height: 35px !important;
+   border-radius: 6px !important;
+   color: #EEF1F6 !important;
+   background: #18A0FB !important;
+   font-weight: 600 !important;
+   border: 0px !important;
+   transition: 0.6s !important;
+}
+
+.fc-addEventButton-button:hover {
+   color: #18A0FB !important;
+   background: #ffffff !important;
+   border: 1px solid #18A0FB !important;
+   transition: 0.6s !important;
+}
+
+
+.fc {
+   color: #232830 !important;
+}
+
+.fc-prev-button,
+.fc-next-button,
+.fc-today-button {
+   background: #FFFFFF !important;
+   color: #515353 !important;
+   border: 1px solid #8C8E96 !important;
+   transition: 0.6s !important;
+   border-radius: 6px !important;
+}
+
+.fc-prev-button:hover,
+.fc-next-button:hover,
+.fc-today-button:hover {
+   color: #18A0FB !important;
+   border: 1px solid #18A0FB !important;
+   transition: 0.4s !important;
+}
+
+
+
+@import "./adaptive.scss";
